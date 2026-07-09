@@ -29,7 +29,7 @@ Le manuel Škoda en ligne est une application web (SPA) : le contenu n'est pas a
 - **indexe** tout le texte pour une recherche plein texte ;
 - **affiche** le tout dans un viewer statique servi par WAMP (ou tout serveur HTTP local).
 
-Usage typique : consulter le manuel dans la voiture, en garage, ou sans dépendre du site Škoda.
+Usages typiques : sauvegarder le manuel sans dépendre du site Škoda, le consulter hors ligne, l'ajouter comme source dans NotebookLM pour l'interroger en langage naturel.
 
 ---
 
