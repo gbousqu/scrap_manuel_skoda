@@ -18,7 +18,6 @@ Chaque modèle de véhicule est sauvegardé dans `manuals/{modèle}/` (ex. `manu
 ### Usages typiques
 
 - **Sauvegarder** un manuel indépendamment du site officiel
-- **Consulter hors ligne** sur PC (garage, voiture, zones sans réseau)
 - **Exporter un PDF complet** (sommaire cliquable) pour archivage/partage
 
 ### Prérequis
