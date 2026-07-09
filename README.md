@@ -41,10 +41,14 @@ Usage typique : consulter le manuel dans la voiture, en garage, ou sans dépendr
 | Manuel digital | https://digital-manual.skoda-auto.com |
 | API contenu | `https://digital-manual.skoda-auto.com/api/vw-topic/V1/topic?key=…` |
 | Médias | `https://digital-manual.skoda-auto.com/default/public/media?…` |
-| Véhicule | Dépend du VIN saisi au lancement du scraper |
-| Langue | Français (`fr_FR`) |
+| Sélection véhicule | Au choix : **VIN** *ou* **modèle + date de sortie** (selon écrans du portail) |
+| Langue | Français (`fr_FR`) (adaptable) |
 
-Le site demande un **numéro VIN** et une **langue** avant d'afficher le manuel adapté au véhicule. Lors du scraping, **vous** effectuez cette étape dans Chromium ; le script attend ensuite l'ouverture du manuel digital.
+Sur le portail Škoda, on peut accéder au manuel de deux façons :
+- en saisissant un **VIN** (manuel exact pour le véhicule) ;
+- ou en choisissant un **modèle** (et parfois une **date de sortie / année**) + la **langue**.
+
+Lors du scraping, **vous** faites cette sélection dans Chromium ; le script attend ensuite l'ouverture du manuel digital (`…/show/…`) pour démarrer le téléchargement complet.
 
 ---
 
