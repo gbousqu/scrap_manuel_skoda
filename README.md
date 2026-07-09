@@ -1,4 +1,4 @@
-# Manuels Škoda — versions locales
+# Manuels Škoda en versions locales 
 
 Ce projet télécharge les **manuels d'utilisation numériques** Škoda depuis le site officiel, les transforme en fichiers HTML/images consultables **sans connexion**, et fournit un **viewer web** (sommaire, navigation, recherche plein texte, export PDF).
 
@@ -24,9 +24,8 @@ Chaque modèle de véhicule est sauvegardé dans `manuals/{modèle}/` (ex. `manu
 
 ### Usages typiques
 
-- **Consulter hors ligne** le manuel (garage, voiture, zones sans réseau).
-- **Rechercher rapidement** (plein texte) dans tout le manuel.
-- **Exporter un PDF complet** (avec sommaire cliquable) pour archivage/partage.
+- **Avoir une sauvegarde indépendante du site officiel** 
+- **Exporter un PDF complet** (avec sommaire cliquable) pour archivage/partage. Ajouter le PDF comme source dans NotebookLM pour l'interroger en langage naturel.
 
 ### Prérequis
 
@@ -46,7 +45,7 @@ python setup_local_env.py
 
 1. Ouvrir `http://localhost/applis/scrap_manuel_skoda/viewer/`
 2. Onglet **Scraper un manuel** → **Ouvrir le navigateur de scraping**
-3. Sur le portail Škoda : **VIN ou modèle/année + langue**, puis ouvrir le manuel
+3. Sur le portail Škoda dans le navigateur qui vient de s'ouvrir : **VIN ou modèle/année + langue**, puis ouvrir le manuel
 4. Dans la page du manuel (`…/show/…`) : cliquer **Lancer le scraping**
 
 Le manuel est sauvegardé dans `manuals/{slug}/`.
@@ -67,7 +66,7 @@ python build_manual_pdf.py --manual <slug>
 
 ---
 
-## But du projet
+## Détails techniques
 
 Le manuel Škoda en ligne est une application web (SPA) : le contenu n'est pas accessible avec un simple téléchargement de page. Ce projet :
 
@@ -77,11 +76,11 @@ Le manuel Škoda en ligne est une application web (SPA) : le contenu n'est pas a
 - **indexe** tout le texte pour une recherche plein texte ;
 - **affiche** le tout dans un viewer statique servi par WAMP (ou tout serveur HTTP local).
 
-Usages typiques : sauvegarder le manuel sans dépendre du site Škoda, le consulter hors ligne, l'ajouter comme source dans NotebookLM pour l'interroger en langage naturel.
+
 
 ---
 
-## Site scrapé
+### Site scrapé
 
 | Élément | URL / détail |
 |--------|----------------|
@@ -100,7 +99,7 @@ Lors du scraping, **vous** faites cette sélection dans Chromium ; le script att
 
 ---
 
-## Méthode de scraping
+### Méthode de scraping
 
 Le site ne livre pas le contenu dans le HTML initial : tout passe par des **appels API JSON**. Le scraping ne « parse » donc pas le DOM page par page, il **appelle la même API** que le site officiel.
 
