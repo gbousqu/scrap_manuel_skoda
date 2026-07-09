@@ -1,0 +1,751 @@
+[
+  {
+    "name": "Strings",
+    "translations": [
+      {
+        "key": "AttachingChildSeat_manual",
+        "value": "Attaching a child seat"
+      },
+      {
+        "key": "Back_To_Models",
+        "value": "Retour aux modèles"
+      },
+      {
+        "key": "BriefInstructions_manual",
+        "value": "Instructions brèves"
+      },
+      {
+        "key": "Button_Cancel",
+        "value": "Annuler"
+      },
+      {
+        "key": "Button_Confirm",
+        "value": "Confirmer"
+      },
+      {
+        "key": "CS_Form_Choose_Valid_Edition",
+        "value": "Choisissez une période de production.\n"
+      },
+      {
+        "key": "CS_Form_Choose_Valid_Language",
+        "value": "Choisissez une langue.\n"
+      },
+      {
+        "key": "CS_Form_Choose_Valid_Market",
+        "value": "Choisissez un marché.\n"
+      },
+      {
+        "key": "Car_manual",
+        "value": "Manuel d'utilisation"
+      },
+      {
+        "key": "Car_manual_description",
+        "value": "Saisissez simplement le code VIN ou effectuez la recherche par modèle."
+      },
+      {
+        "key": "Car_manual_manual",
+        "value": "Manuels d'utilisation"
+      },
+      {
+        "key": "Car_manual_manual_description",
+        "value": "Sur cette page, nous vous offrons la possibilité de télécharger le manuel d'utilisation et tout autre document concernant la voiture."
+      },
+      {
+        "key": "Car_navigation_manual",
+        "value": "Manuel du système de navigation"
+      },
+      {
+        "key": "Car_radio_manual",
+        "value": "Car radio manual"
+      },
+      {
+        "key": "Citigo_EIV_NF",
+        "value": "Citigoᵉ iV"
+      },
+      {
+        "key": "Citigo_NF",
+        "value": "CITIGO"
+      },
+      {
+        "key": "Current_Models_Without_Skoda",
+        "value": "Actuels"
+      },
+      {
+        "key": "Download_Pdf",
+        "value": "Télécharger le PDF"
+      },
+      {
+        "key": "Elroq_PY",
+        "value": "Elroq"
+      },
+      {
+        "key": "Elroq_PY_MOD_Flash_Message",
+        "value": "To display the correct version of owner's manual for your vehicle, we recommend to use search function via the VIN code."
+      },
+      {
+        "key": "Enter_VIN",
+        "value": "Enter your {Model} VIN number:"
+      },
+      {
+        "key": "Enyaq_5A",
+        "value": "Enyaq"
+      },
+      {
+        "key": "Enyaq_5A_MOD_Flash_Message",
+        "value": "To display the correct version of owner's manual for your vehicle, we recommend to use search function via the VIN code."
+      },
+      {
+        "key": "Enyaq_IV_5A",
+        "value": "Enyaq"
+      },
+      {
+        "key": "Enyaq_IV_5A_MOD_Flash_Message",
+        "value": "Pour afficher la version correcte du manuel du propriétaire pour votre véhicule, nous vous recommandons d'utiliser la fonction de recherche via le code VIN."
+      },
+      {
+        "key": "Enyaq_IV_5E",
+        "value": "Enyaq Coupé"
+      },
+      {
+        "key": "Enyaq_IV_5E_MOD_Flash_Message",
+        "value": "Pour afficher la version correcte du manuel du propriétaire pour votre véhicule, nous vous recommandons d'utiliser la fonction de recherche via le code VIN."
+      },
+      {
+        "key": "Epiq_PX",
+        "value": "Epiq"
+      },
+      {
+        "key": "Epiq_PX_MOD_Flash_Message",
+        "value": "To display the correct version of owner's manual for your vehicle, we recommend to use search function via the VIN code."
+      },
+      {
+        "key": "Error_General_Description",
+        "value": "In case of persistent problems, contact the Škoda Auto infoline."
+      },
+      {
+        "key": "Error_General_Title",
+        "value": "Application error occured."
+      },
+      {
+        "key": "Error_UnsupportedBrowser_Description",
+        "value": "The version of your browser is not supported."
+      },
+      {
+        "key": "Error_UnsupportedBrowser_Title",
+        "value": "Unsupported browser"
+      },
+      {
+        "key": "Fabia_54",
+        "value": "Fabia II"
+      },
+      {
+        "key": "Fabia_6Y",
+        "value": "Fabia I"
+      },
+      {
+        "key": "Fabia_NJ",
+        "value": "Fabia III"
+      },
+      {
+        "key": "Fabia_PJ",
+        "value": "Fabia"
+      },
+      {
+        "key": "Favorit_FA",
+        "value": "Favorit"
+      },
+      {
+        "key": "Felicia_6U",
+        "value": "Felicia"
+      },
+      {
+        "key": "Form_Error_FileTooLarge",
+        "value": "File size exceeds the allowed limit of {0}."
+      },
+      {
+        "key": "Form_Error_InvalidFormat",
+        "value": "Invalid VIN code format"
+      },
+      {
+        "key": "Form_Error_InvalidImageFormat",
+        "value": "Unsupported image format. Supported formats are {0}."
+      },
+      {
+        "key": "Form_Error_NoManuals",
+        "value": "Manuel introuvable."
+      },
+      {
+        "key": "Form_Error_ResolutionTooHigh",
+        "value": "Image resolution exceeds the limit of {0}."
+      },
+      {
+        "key": "Form_Error_VinLength",
+        "value": "Longueur du code VIN incorrecte."
+      },
+      {
+        "key": "Form_Error_VinNotRecognized",
+        "value": "No recognizable VIN found in the image."
+      },
+      {
+        "key": "Form_Error_VinRecognitionFailed",
+        "value": "An error occurred while processing the image."
+      },
+      {
+        "key": "Form_Error_VinRecognitionInvalidFormat",
+        "value": "The recognized VIN format is invalid."
+      },
+      {
+        "key": "Form_Error_VinRecognitionTimeout",
+        "value": "The VIN recognition process timed out."
+      },
+      {
+        "key": "Form_Warning_NoMarket",
+        "value": "Le marché n'est pas disponible pour la période de production sélectionnée."
+      },
+      {
+        "key": "General_information_manuals",
+        "value": "Information"
+      },
+      {
+        "key": "Help_on_the_road",
+        "value": "Help on the road"
+      },
+      {
+        "key": "Kamiq_NW4",
+        "value": "Kamiq"
+      },
+      {
+        "key": "Karoq_NU",
+        "value": "Karoq"
+      },
+      {
+        "key": "Kodiaq_IV_PS",
+        "value": "Kodiaq iV"
+      },
+      {
+        "key": "Kodiaq_NS",
+        "value": "Kodiaq"
+      },
+      {
+        "key": "Kodiaq_PS",
+        "value": "Kodiaq"
+      },
+      {
+        "key": "Kushaq_PA",
+        "value": "Kushaq"
+      },
+      {
+        "key": "Kylaq_PC",
+        "value": "Kylaq"
+      },
+      {
+        "key": "LPG_Supplement_manual",
+        "value": "Supplément - véhicules avec moteur GPL"
+      },
+      {
+        "key": "LabelNew_Variant1",
+        "value": "New"
+      },
+      {
+        "key": "LabelNew_Variant2",
+        "value": "New"
+      },
+      {
+        "key": "LabelNew_Variant3",
+        "value": "New"
+      },
+      {
+        "key": "Language",
+        "value": "Langue"
+      },
+      {
+        "key": "Link_Cert_Text",
+        "value": "Declarations of Conformity"
+      },
+      {
+        "key": "Manual",
+        "value": "Manuel"
+      },
+      {
+        "key": "Manual_Model_Amundsen",
+        "value": "Amundsen"
+      },
+      {
+        "key": "Manual_Model_Amundsen_Bolero",
+        "value": "Amundsen, Bolero"
+      },
+      {
+        "key": "Manual_Model_Audience",
+        "value": "Audience"
+      },
+      {
+        "key": "Manual_Model_Beat",
+        "value": "Beat"
+      },
+      {
+        "key": "Manual_Model_Blues",
+        "value": "Blues"
+      },
+      {
+        "key": "Manual_Model_Bolero",
+        "value": "Bolero"
+      },
+      {
+        "key": "Manual_Model_Casablanca",
+        "value": "Casablanca"
+      },
+      {
+        "key": "Manual_Model_Citigo",
+        "value": "Citigo"
+      },
+      {
+        "key": "Manual_Model_Columbus",
+        "value": "Columbus"
+      },
+      {
+        "key": "Manual_Model_Columbus_Amundsen_Bolero",
+        "value": "Columbus, Amundsen, Bolero"
+      },
+      {
+        "key": "Manual_Model_Cruise",
+        "value": "Cruise"
+      },
+      {
+        "key": "Manual_Model_DX",
+        "value": "DX"
+      },
+      {
+        "key": "Manual_Model_Dance",
+        "value": "Dance"
+      },
+      {
+        "key": "Manual_Model_Elroq",
+        "value": "Elroq"
+      },
+      {
+        "key": "Manual_Model_Enyaq",
+        "value": "Enyaq"
+      },
+      {
+        "key": "Manual_Model_Epiq",
+        "value": "Epiq"
+      },
+      {
+        "key": "Manual_Model_Fabia",
+        "value": "Fabia"
+      },
+      {
+        "key": "Manual_Model_Favorit",
+        "value": "Favorit"
+      },
+      {
+        "key": "Manual_Model_Felicia",
+        "value": "Felicia"
+      },
+      {
+        "key": "Manual_Model_Funky",
+        "value": "Funky"
+      },
+      {
+        "key": "Manual_Model_Kamiq",
+        "value": "Kamiq"
+      },
+      {
+        "key": "Manual_Model_Karoq",
+        "value": "Karoq"
+      },
+      {
+        "key": "Manual_Model_Kodiaq",
+        "value": "Kodiaq"
+      },
+      {
+        "key": "Manual_Model_Kodiaq_PS",
+        "value": "Kodiaq"
+      },
+      {
+        "key": "Manual_Model_Kodiaq_iV_PS",
+        "value": "Kodiaq iV"
+      },
+      {
+        "key": "Manual_Model_Kylaq",
+        "value": "Kylaq"
+      },
+      {
+        "key": "Manual_Model_MS201",
+        "value": "MS201"
+      },
+      {
+        "key": "Manual_Model_MS202",
+        "value": "MS202"
+      },
+      {
+        "key": "Manual_Model_MS303",
+        "value": "MS303"
+      },
+      {
+        "key": "Manual_Model_MS402",
+        "value": "MS402"
+      },
+      {
+        "key": "Manual_Model_Melody_CD",
+        "value": "Melody CD"
+      },
+      {
+        "key": "Manual_Model_Melody_Tape",
+        "value": "Melody Tape"
+      },
+      {
+        "key": "Manual_Model_Nexus",
+        "value": "Nexus"
+      },
+      {
+        "key": "Manual_Model_Octavia",
+        "value": "Octavia"
+      },
+      {
+        "key": "Manual_Model_Peaq",
+        "value": "Peaq"
+      },
+      {
+        "key": "Manual_Model_Rapid",
+        "value": "Rapid"
+      },
+      {
+        "key": "Manual_Model_Rapid_Spaceback",
+        "value": "Rapid Spaceback"
+      },
+      {
+        "key": "Manual_Model_Rhapsody",
+        "value": "Rhapsody"
+      },
+      {
+        "key": "Manual_Model_Roomster",
+        "value": "Roomster"
+      },
+      {
+        "key": "Manual_Model_Sat_Compass",
+        "value": "Sat Compass"
+      },
+      {
+        "key": "Manual_Model_Scala",
+        "value": "Scala"
+      },
+      {
+        "key": "Manual_Model_Stream",
+        "value": "Stream"
+      },
+      {
+        "key": "Manual_Model_Superb",
+        "value": "Superb"
+      },
+      {
+        "key": "Manual_Model_Superb_IV_NZ",
+        "value": "Superb iV"
+      },
+      {
+        "key": "Manual_Model_Superb_NG",
+        "value": "Superb"
+      },
+      {
+        "key": "Manual_Model_Swing",
+        "value": "Swing"
+      },
+      {
+        "key": "Manual_Model_Symphony",
+        "value": "Symphony"
+      },
+      {
+        "key": "Manual_Model_Symphony_CD",
+        "value": "Symphony CD"
+      },
+      {
+        "key": "Manual_Model_Symphony_Tape",
+        "value": "Symphony Tape"
+      },
+      {
+        "key": "Manual_Model_Yeti",
+        "value": "Yeti"
+      },
+      {
+        "key": "Manual_manual",
+        "value": "Manuels d'utilisation"
+      },
+      {
+        "key": "Manuals",
+        "value": "Manuels"
+      },
+      {
+        "key": "Market",
+        "value": "Marché"
+      },
+      {
+        "key": "Market_Czech_Republic",
+        "value": "République tchèque"
+      },
+      {
+        "key": "Market_India",
+        "value": "Inde"
+      },
+      {
+        "key": "Market_Other",
+        "value": "Autres"
+      },
+      {
+        "key": "Market_Russia",
+        "value": "Russie"
+      },
+      {
+        "key": "Market_Taiwan",
+        "value": "Taiwan"
+      },
+      {
+        "key": "Market_tooltip",
+        "value": "Marché pour lequel la voiture a été produite. Le contenu du manuel peut varier d'un marché à l'autre."
+      },
+      {
+        "key": "Navigation_manual",
+        "value": "Manuel du système de navigation"
+      },
+      {
+        "key": "Octavia_1U",
+        "value": "Octavia I"
+      },
+      {
+        "key": "Octavia_1Z",
+        "value": "Octavia II"
+      },
+      {
+        "key": "Octavia_5E",
+        "value": "Octavia III"
+      },
+      {
+        "key": "Octavia_IV_NX",
+        "value": "Octavia iV"
+      },
+      {
+        "key": "Octavia_NX",
+        "value": "Octavia"
+      },
+      {
+        "key": "Octavia_Tour_1U",
+        "value": "Octavia Tour I"
+      },
+      {
+        "key": "Octavia_Tour_1Z",
+        "value": "Octavia Tour II"
+      },
+      {
+        "key": "Older_models_Without_Skoda",
+        "value": "Précédents"
+      },
+      {
+        "key": "Peaq_PZ",
+        "value": "Peaq"
+      },
+      {
+        "key": "Peaq_PZ_MOD_Flash_Message",
+        "value": "To display the correct version of owner's manual for your vehicle, we recommend to use search function via the VIN code."
+      },
+      {
+        "key": "Period_search",
+        "value": "Période de production"
+      },
+      {
+        "key": "Players_and_phones",
+        "value": "Players and telephones"
+      },
+      {
+        "key": "Radio_manual",
+        "value": "Manuel de l’autoradio\n"
+      },
+      {
+        "key": "Rapid_NA",
+        "value": "Rapid (India)"
+      },
+      {
+        "key": "Rapid_NH",
+        "value": "Rapid"
+      },
+      {
+        "key": "Rapid_NK",
+        "value": "Rapid"
+      },
+      {
+        "key": "Rapid_NKR",
+        "value": "Rapid"
+      },
+      {
+        "key": "Rapid_Spaceback_NH",
+        "value": "Rapid Spaceback"
+      },
+      {
+        "key": "Roomster_5J",
+        "value": "Roomster"
+      },
+      {
+        "key": "Scala_NW1",
+        "value": "Scala"
+      },
+      {
+        "key": "Search_Error_Description",
+        "value": "En cas de problèmes persistants, contactez la ligne d'information de ŠKODA AUTO."
+      },
+      {
+        "key": "Search_Error_Title",
+        "value": "Manuel introuvable. Veuillez réessayer plus tard."
+      },
+      {
+        "key": "Search_Options",
+        "value": "Paramètres de recherche"
+      },
+      {
+        "key": "Show_manual",
+        "value": "Afficher"
+      },
+      {
+        "key": "Show_model",
+        "value": "Sélectionnez un modèle"
+      },
+      {
+        "key": "Slavia_PB",
+        "value": "Slavia"
+      },
+      {
+        "key": "Superb_3T",
+        "value": "Superb II"
+      },
+      {
+        "key": "Superb_3U",
+        "value": "Superb I"
+      },
+      {
+        "key": "Superb_3V",
+        "value": "Superb III"
+      },
+      {
+        "key": "Superb_IV_3V",
+        "value": "Superb iV"
+      },
+      {
+        "key": "Superb_IV_NZ",
+        "value": "Superb iV"
+      },
+      {
+        "key": "Superb_NZ",
+        "value": "Superb"
+      },
+      {
+        "key": "TechnicalChange_manual",
+        "value": "Supplément"
+      },
+      {
+        "key": "Tool_Error_Description",
+        "value": "Sadly, the Owner’s Manual you selected is currently being updated. We’ve redirected you to our international website where you can view other Owner's Manuals."
+      },
+      {
+        "key": "Tool_Error_Title",
+        "value": "Website is temporarily unavailable"
+      },
+      {
+        "key": "VIN_Code",
+        "value": "Code VIN"
+      },
+      {
+        "key": "VIN_Form_Choose_Valid_Language",
+        "value": "Choisissez une langue."
+      },
+      {
+        "key": "VIN_code_tooltip",
+        "value": "Le code VIN se trouve sur le certificat d'immatriculation du véhicule ou directement dans le véhicule, sur l'étiquette située sous le pare-brise ou en bas du montant central de la carrosserie.\nLa recherche à l'aide du VIN n'est possible que pour les véhicules fabriqués à partir de l'année 2010."
+      },
+      {
+        "key": "VIN_code_tooltip_2",
+        "value": "Envoyez uniquement une photo contenant le VIN de votre véhicule sans aucune autre donnée personnelle"
+      },
+      {
+        "key": "VIN_search",
+        "value": "Saisissez le code VIN"
+      },
+      {
+        "key": "Vin_Search_NotFound_Description",
+        "value": "\"Vérifiez le code VIN saisi ou essayez de trouver le manuel par modèle.\nEn cas de problèmes persistants, contactez la ligne d'information de ŠKODA AUTO.\""
+      },
+      {
+        "key": "Vin_Search_NotFound_Title",
+        "value": "Manuel introuvable."
+      },
+      {
+        "key": "WebTitle",
+        "value": "Manuel d'utilisation"
+      },
+      {
+        "key": "Yeti_5L",
+        "value": "Yeti"
+      },
+      {
+        "key": "All_corresponding_manuals",
+        "value": "Manuels disponibles"
+      },
+      {
+        "key": "All_skoda_manuals",
+        "value": "Tous les manuels ŠKODA"
+      },
+      {
+        "key": "Choose_your_preferred_language",
+        "value": "Choisissez votre langue :"
+      },
+      {
+        "key": "Current_Models",
+        "value": "Modèles actuels de ŠKODA"
+      },
+      {
+        "key": "Description",
+        "value": "Nous vous proposons de visualiser ou télécharger et imprimer les manuels utilisateur de votre véhicule.\n\nChoisissez le modèle de votre ŠKODA, sa date de construction et le type de documentation que vous recherchez."
+      },
+      {
+        "key": "Download",
+        "value": "Télécharger"
+      },
+      {
+        "key": "Edition_date_since",
+        "value": "Depuis"
+      },
+      {
+        "key": "Edition_date_until",
+        "value": "Jusqu'à"
+      },
+      {
+        "key": "Loading",
+        "value": "Chargement..."
+      },
+      {
+        "key": "Manual_on",
+        "value": "Manuel sur"
+      },
+      {
+        "key": "Older_models",
+        "value": "Modèles précédents de ŠKODA"
+      },
+      {
+        "key": "Online",
+        "value": "En ligne"
+      },
+      {
+        "key": "Open_manual",
+        "value": "Ouvrir le manuel"
+      },
+      {
+        "key": "Open_manual_online",
+        "value": "Ouvrir le manuel en ligne"
+      },
+      {
+        "key": "Rescue_data_sheets",
+        "value": "Fiches de sécurité"
+      },
+      {
+        "key": "Your_car_production_period",
+        "value": "Date de construction de votre véhicule :"
+      }
+    ]
+  }
+]

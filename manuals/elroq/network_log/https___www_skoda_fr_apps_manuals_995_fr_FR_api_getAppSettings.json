@@ -1,0 +1,17 @@
+{
+  "webAppRoute": null,
+  "environment": "prod",
+  "topicPilotDirectUrl": "https://digital-manual.skoda-auto.com/api/entrypoint/V1/direct/",
+  "webAppDescription": "On this page we offer you the opportunity to download the owner's manual and any other documents for the car.",
+  "reCaptchaKey": "",
+  "webApiBaseUrl": null,
+  "bid": null,
+  "culture": null,
+  "isApplicationInsightsDisabled": false,
+  "appInsightsInstrumentationKey": null,
+  "appInsightsConnectionString": null,
+  "isFacelift": false,
+  "moveDisclaimersToFooter": false,
+  "legalEntities": null,
+  "enabledLoginUI": false
+}

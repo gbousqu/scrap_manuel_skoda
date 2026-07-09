@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "manualType": "Digital",
+      "digitalManual": {
+        "partNumber": "5LJ012740AC",
+        "uiLanguage": "fr_FR"
+      },
+      "pdfManual": null
+    }
+  ],
+  "errorCode": "NoError",
+  "errorMessage": null
+}

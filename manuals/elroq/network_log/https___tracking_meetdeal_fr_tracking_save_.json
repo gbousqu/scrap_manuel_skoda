@@ -1,0 +1,12 @@
+{
+  "uuid": "md-0d90e267-fd2a-438e-8bba-e35cc68b642a",
+  "event": "Chat Minimised",
+  "id_level": "0",
+  "type": "chat",
+  "chatStatus": "offline",
+  "time": "05/07/2026 17:04:50",
+  "device": "desktop",
+  "appId": "skoda-chat",
+  "url": "https://www.skoda.fr/apps/manuals/Detail?vin=TMBNH7NY1TF139075&manualLang=frs",
+  "createdAt": 1783263891148
+}

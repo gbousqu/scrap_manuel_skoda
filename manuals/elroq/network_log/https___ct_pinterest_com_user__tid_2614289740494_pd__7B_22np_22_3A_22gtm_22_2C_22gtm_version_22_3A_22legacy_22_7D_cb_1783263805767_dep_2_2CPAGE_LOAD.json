@@ -1,0 +1,19 @@
+{
+  "aemEnabled": false,
+  "aemFnLnEnabled": false,
+  "aemPhEnabled": false,
+  "aemGeEnabled": false,
+  "aemDbEnabled": false,
+  "aemLocEnabled": false,
+  "aemExternalIdEnabled": false,
+  "ctEpikIframeEnabled": true,
+  "chromeNewUserAgentEnabled": true,
+  "isEu": true,
+  "isUtilizingAdvertiser1pEnabled": true,
+  "aemStorageEnabled": true,
+  "isRestrictedRegion": false,
+  "gaClientIdEnabled": false,
+  "mdFrequency": 0.0,
+  "piaaEndPoint": "",
+  "noCodeCapiDomains": []
+}

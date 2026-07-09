@@ -1,0 +1,199 @@
+/* Contenu HTML scrapé — thème sombre + tailles d'images */
+
+#content {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #e8eaec;
+}
+
+#content > h1 {
+  margin: 0 0 1.25rem;
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #f4f6f5;
+}
+
+#content .topic-content,
+#content section {
+  margin: 0;
+}
+
+#content [data-role="block"] {
+  margin-bottom: 1.25rem;
+}
+
+#content p {
+  margin: 0 0 0.85rem;
+}
+
+#content p[data-type="titel"],
+#content p[data-role="bridgehead"] {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #f4f6f5;
+}
+
+#content ul,
+#content ol {
+  margin: 0 0 0.85rem;
+  padding-left: 1.35rem;
+}
+
+#content li {
+  margin-bottom: 0.45rem;
+}
+
+/* Icônes / pictogrammes d'alerte ISO (19×19 px) */
+#content img.icon,
+#content img[data-role="icon"],
+#content img[data-role="safety-alert-symbol"] {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
+}
+
+/* Images bloc — taille naturelle, affichage en bloc */
+#content img.blockimage {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0 1.25rem;
+}
+
+/* Symboles inline dans le texte (infodivertissement, etc.) */
+#content img.symbol,
+#content img[data-role="symbol"] {
+  margin-bottom: 0 !important;
+  vertical-align: middle;
+  max-height: unset !important;
+  max-width: 2rem;
+  width: auto;
+  height: auto;
+}
+
+/* vw-color-black : SVG noir → clair sur fond sombre */
+#content img.symbol[data-class*="vw-color-black"],
+#content img[data-role="symbol"][data-class*="vw-color-black"],
+#content span[data-class*="vw-color-black"] img[data-role="symbol"] {
+  filter: brightness(0) invert(1);
+}
+
+/* Avertissements / remarques */
+#content [data-role="warning"],
+#content [data-role="notice"],
+#content [data-role="danger"],
+#content [data-role="caution"] {
+  margin: 1rem 0 1.25rem;
+  padding: 1rem 1.15rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#content [data-role="signalword-panel"] {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.65rem;
+}
+
+#content p[data-role="signalword"] {
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #f4f6f5;
+}
+
+#content [data-role="message-panel"] p:last-child,
+#content [data-role="message-panel"] ul:last-child {
+  margin-bottom: 0;
+}
+
+/* Illustrations dans figures */
+#content [data-type="illu"] {
+  margin: 0.75rem 0 1rem;
+}
+
+#content figure {
+  margin: 0;
+}
+
+#content figure img,
+#content .fancybox img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+#content [data-class*="vw-layout-narrow"],
+#content div[data-class="vw-layout-narrow"] {
+  max-width: min(100%, 26rem);
+}
+
+#content [data-class*="vw-layout-half_column"],
+#content div[data-class="vw-layout-half_column"] {
+  max-width: min(100%, 50%);
+}
+
+#content [data-class*="vw-layout-full_column"] {
+  max-width: 100%;
+}
+
+#content a:link,
+#content a.local-topic-link,
+#content a.topiclink[href^="#topic/"],
+#content a.vw-link-short,
+#content a.vw-link-long {
+  color: #7dcea0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#content a:visited {
+  color: #5d9475;
+}
+
+#content a.local-topic-link:hover,
+#content a.topiclink[href^="#topic/"]:hover,
+#content a:hover {
+  color: #a8e6c1;
+}
+
+#content span[data-class*="vw-dir-ltr"] {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+#content [data-class*="vw-list-style-bulleted"] ul {
+  list-style: disc;
+}
+
+#content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0 1rem;
+  font-size: 0.9rem;
+}
+
+#content th,
+#content td {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+#content th {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+  color: #f4f6f5;
+}

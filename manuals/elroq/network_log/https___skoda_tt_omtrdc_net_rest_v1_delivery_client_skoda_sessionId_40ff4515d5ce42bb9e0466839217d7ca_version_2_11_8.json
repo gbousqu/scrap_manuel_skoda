@@ -1,0 +1,53 @@
+{
+  "status": 200,
+  "requestId": "d3ea2fd2dcb942cf9f540038100fb3d6",
+  "client": "skoda",
+  "id": {
+    "tntId": "40ff4515d5ce42bb9e0466839217d7ca.37_0"
+  },
+  "edgeHost": "mboxedge37.tt.omtrdc.net",
+  "prefetch": {
+    "metrics": [
+      {
+        "type": "click",
+        "selector": "button[data-test=\"submitButton\"]",
+        "eventToken": "Fz1lFoW5b5fVPUVYND7rSxgOMf3bK4E1EOZB0qqbBeCqW4LcuDQp7iC8cqez1FAh"
+      }
+    ]
+  },
+  "telemetryServerToken": "kZ8/JTuvKyAVXXrxfcYga9oAtiP7ynDX9BzAvzRPq+Q=",
+  "execute": {
+    "pageLoad": {
+      "options": [
+        {
+          "content": [
+            {
+              "type": "customCode",
+              "selector": "HEAD",
+              "cssSelector": "",
+              "content": "<script>\n  (function() {\n    window.dataLayer.push({\n                \"appweb.Name\": \"perso_experiment\",\n                \"event\": \"trackEvent\",\n                \"eventCategory\": \"AB - Popin \" + (isKamiq ? \"Kamiq\" : \"Fabia\"),\n                \"eventAction\": \"displayed\",\n                \"eventLabel\": \"original\"\n            });\n  }());\n</script>"
+            }
+          ],
+          "type": "actions",
+          "responseTokens": {
+            "offer.name": "Default Content",
+            "experience.id": "0",
+            "activity.name": "AB - H - Popin génération de lead Juin Fabia Kamiq - QA",
+            "profile.tntId": "40ff4515d5ce42bb9e0466839217d7ca",
+            "activity.id": "1261264",
+            "experience.name": "Original",
+            "offer.id": "0"
+          },
+          "sourceType": "target"
+        }
+      ],
+      "metrics": [
+        {
+          "type": "click",
+          "selector": "button[data-test=\"submitButton\"]",
+          "eventToken": "Fz1lFoW5b5fVPUVYND7rSxgOMf3bK4E1EOZB0qqbBeCqW4LcuDQp7iC8cqez1FAh"
+        }
+      ]
+    }
+  }
+}

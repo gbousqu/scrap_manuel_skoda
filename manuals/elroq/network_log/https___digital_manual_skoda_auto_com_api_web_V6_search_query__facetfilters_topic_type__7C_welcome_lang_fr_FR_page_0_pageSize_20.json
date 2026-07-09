@@ -1,0 +1,326 @@
+{
+  "queryLanguage": "fr_FR",
+  "availableLanguages": [
+    "ar_SA",
+    "bg_BG",
+    "ca_ES",
+    "cs_CZ",
+    "da_DK",
+    "de_DE",
+    "el_GR",
+    "en_GB",
+    "es_ES",
+    "et_EE",
+    "fi_FI",
+    "fr_FR",
+    "ga_IE",
+    "he_IL",
+    "hr_HR",
+    "hu_HU",
+    "it_IT",
+    "kk_KZ",
+    "lt_LT",
+    "lv_LV",
+    "mk_MK",
+    "mt_MT",
+    "nb_NO",
+    "nl_NL",
+    "pl_PL",
+    "pt_PT",
+    "ro_RO",
+    "ru_RU",
+    "sk_SK",
+    "sl_SI",
+    "sq_AL",
+    "sr_CS",
+    "sr_ME",
+    "sv_SE",
+    "tr_TR",
+    "uk_UA",
+    "uz_UZ",
+    "vi_VN",
+    "zh_TW"
+  ],
+  "allHitsCount": 1,
+  "withoutContext": false,
+  "collectionName": null,
+  "publicCollection": false,
+  "extendable": false,
+  "changedLanguage": false,
+  "user": {
+    "username": "TMBNH7NY1TF139075",
+    "displayName": "TMBNH7NY1TF139075",
+    "admin": false,
+    "anonymous": false,
+    "pdfExport": false,
+    "offlinePackageExport": false,
+    "usertype": null,
+    "s3Loader": false
+  },
+  "results": [
+    {
+      "topicId": "2812285ef45af2dbac14452540bf0b85_3_fr_FR",
+      "previewImage": "imgb4b246d475188a2dac144525087a325c_2_--_--_PNG.png",
+      "title": "Notice d’utilisation",
+      "abstractText": "<span data-class=\"vw-modell-bez\">Škoda Elroq</span><br/><span data-class=\"vw-effective-from\">24.11.2025</span>",
+      "date": "2026-02-20T14:37:16.637Z",
+      "collections": [],
+      "topicType": "tree",
+      "docType": "Publication",
+      "printPDF": null,
+      "topicVariants": [],
+      "innerHitTopicVariants": [],
+      "topicTags": [],
+      "facets": [
+        {
+          "0": [
+            "vw-partnumber-facet"
+          ],
+          "1": [
+            "5LJ012740AC"
+          ]
+        },
+        {
+          "0": [
+            "vw-partnumber-version-facet"
+          ],
+          "1": [
+            "C"
+          ]
+        },
+        {
+          "0": [
+            "vw-partnumber-tma-facet"
+          ],
+          "1": [
+            "5LJ"
+          ]
+        }
+      ],
+      "webSearchPartnumberLabel": {
+        "partnumberLabel": "5LJ012740AC",
+        "fullPartnumber": "5LJ012740AC"
+      }
+    }
+  ],
+  "facetTrees": [
+    {
+      "parent": null,
+      "id": "ffnid1cd3d5d8f785a67b0ad95f9513bfe110",
+      "label": "Modèles Škoda",
+      "value": "nid1cd3d5d8f785a67b0ad95f9513bfe110_|_nid1cd3d5d8f785a67b0ad95f9513bfe110",
+      "count": null,
+      "active": false,
+      "sortKey": 2,
+      "treeId": "nid1cd3d5d8f785a67b0ad95f9513bfe110",
+      "nodeId": "nid1cd3d5d8f785a67b0ad95f9513bfe110",
+      "children": [
+        {
+          "parent": null,
+          "id": "ffnida48751f9f7b3fed80ad95f9541c9df5c",
+          "label": "A",
+          "value": "nid1cd3d5d8f785a67b0ad95f9513bfe110_|_nida48751f9f7b3fed80ad95f9541c9df5c",
+          "count": null,
+          "active": false,
+          "sortKey": 2,
+          "treeId": "nid1cd3d5d8f785a67b0ad95f9513bfe110",
+          "nodeId": "nida48751f9f7b3fed80ad95f9541c9df5c",
+          "children": [
+            {
+              "parent": null,
+              "id": "ffnidc2ffc11ba913f4fe0a5ad5ff7df468f6",
+              "label": "SK 316/3 (Elroq)",
+              "value": "nid1cd3d5d8f785a67b0ad95f9513bfe110_|_nidc2ffc11ba913f4fe0a5ad5ff7df468f6",
+              "count": null,
+              "active": false,
+              "sortKey": 11,
+              "treeId": "nid1cd3d5d8f785a67b0ad95f9513bfe110",
+              "nodeId": "nidc2ffc11ba913f4fe0a5ad5ff7df468f6",
+              "children": [],
+              "type": null,
+              "name": "SK 316/3 (Elroq)"
+            }
+          ],
+          "type": null,
+          "name": "A"
+        }
+      ],
+      "type": "http://metadata.topicpilot.de/facets/type/extrinsic/product/structure",
+      "name": "Modèles Škoda"
+    },
+    {
+      "parent": null,
+      "id": "ffnidd73f452989888527e9454318835260e5",
+      "label": "vw-partnumber-facet",
+      "value": "nidd73f452989888527e9454318835260e5_|_nidd73f452989888527e9454318835260e5",
+      "count": null,
+      "active": false,
+      "sortKey": 12,
+      "treeId": "nidd73f452989888527e9454318835260e5",
+      "nodeId": "nidd73f452989888527e9454318835260e5",
+      "children": [
+        {
+          "parent": null,
+          "id": "ffnid2a6020cced22d4fe4239d1eeb42d8808",
+          "label": "5LJ012740AC",
+          "value": "nidd73f452989888527e9454318835260e5_|_nid2a6020cced22d4fe4239d1eeb42d8808",
+          "count": null,
+          "active": false,
+          "sortKey": 10,
+          "treeId": "nidd73f452989888527e9454318835260e5",
+          "nodeId": "nid2a6020cced22d4fe4239d1eeb42d8808",
+          "children": [],
+          "type": null,
+          "name": "5LJ012740AC"
+        }
+      ],
+      "type": "http://metadata.topicpilot.de/facets/type/extrinsic",
+      "name": "vw-partnumber-facet"
+    },
+    {
+      "parent": null,
+      "id": "ffnid163306252caaeaee18556b58878c44da",
+      "label": "vw-partnumber-language-facet",
+      "value": "nid163306252caaeaee18556b58878c44da_|_nid163306252caaeaee18556b58878c44da",
+      "count": null,
+      "active": false,
+      "sortKey": 22,
+      "treeId": "nid163306252caaeaee18556b58878c44da",
+      "nodeId": "nid163306252caaeaee18556b58878c44da",
+      "children": [
+        {
+          "parent": null,
+          "id": "ffnidafcb5e9809865eb65abf8543e5cc5e9f",
+          "label": "740",
+          "value": "nid163306252caaeaee18556b58878c44da_|_nidafcb5e9809865eb65abf8543e5cc5e9f",
+          "count": null,
+          "active": false,
+          "sortKey": 10,
+          "treeId": "nid163306252caaeaee18556b58878c44da",
+          "nodeId": "nidafcb5e9809865eb65abf8543e5cc5e9f",
+          "children": [],
+          "type": null,
+          "name": "740"
+        }
+      ],
+      "type": "http://metadata.topicpilot.de/facets/type/extrinsic",
+      "name": "vw-partnumber-language-facet"
+    },
+    {
+      "parent": null,
+      "id": "ffnid7d39beee46c186548177372c01de7ac9",
+      "label": "vw-partnumber-market-facet",
+      "value": "nid7d39beee46c186548177372c01de7ac9_|_nid7d39beee46c186548177372c01de7ac9",
+      "count": null,
+      "active": false,
+      "sortKey": 32,
+      "treeId": "nid7d39beee46c186548177372c01de7ac9",
+      "nodeId": "nid7d39beee46c186548177372c01de7ac9",
+      "children": [
+        {
+          "parent": null,
+          "id": "ffnid3aef02965423bcac712fc8f5a5dcea54",
+          "label": "A",
+          "value": "nid7d39beee46c186548177372c01de7ac9_|_nid3aef02965423bcac712fc8f5a5dcea54",
+          "count": null,
+          "active": false,
+          "sortKey": 10,
+          "treeId": "nid7d39beee46c186548177372c01de7ac9",
+          "nodeId": "nid3aef02965423bcac712fc8f5a5dcea54",
+          "children": [],
+          "type": null,
+          "name": "A"
+        }
+      ],
+      "type": "http://metadata.topicpilot.de/facets/type/extrinsic",
+      "name": "vw-partnumber-market-facet"
+    },
+    {
+      "parent": null,
+      "id": "ffnid20e3cc7aa20592aa68fd6c788169cfcd",
+      "label": "vw-partnumber-tma-facet",
+      "value": "nid20e3cc7aa20592aa68fd6c788169cfcd_|_nid20e3cc7aa20592aa68fd6c788169cfcd",
+      "count": null,
+      "active": false,
+      "sortKey": 42,
+      "treeId": "nid20e3cc7aa20592aa68fd6c788169cfcd",
+      "nodeId": "nid20e3cc7aa20592aa68fd6c788169cfcd",
+      "children": [
+        {
+          "parent": null,
+          "id": "ffnidfdb0852ce647eab4e56fd48b4eb417c3",
+          "label": "5LJ",
+          "value": "nid20e3cc7aa20592aa68fd6c788169cfcd_|_nidfdb0852ce647eab4e56fd48b4eb417c3",
+          "count": null,
+          "active": false,
+          "sortKey": 10,
+          "treeId": "nid20e3cc7aa20592aa68fd6c788169cfcd",
+          "nodeId": "nidfdb0852ce647eab4e56fd48b4eb417c3",
+          "children": [],
+          "type": null,
+          "name": "5LJ"
+        }
+      ],
+      "type": "http://metadata.topicpilot.de/facets/type/extrinsic",
+      "name": "vw-partnumber-tma-facet"
+    },
+    {
+      "parent": null,
+      "id": "ffnid689129801462f8e63e2cbe1797abaeaa",
+      "label": "vw-partnumber-version-facet",
+      "value": "nid689129801462f8e63e2cbe1797abaeaa_|_nid689129801462f8e63e2cbe1797abaeaa",
+      "count": null,
+      "active": false,
+      "sortKey": 52,
+      "treeId": "nid689129801462f8e63e2cbe1797abaeaa",
+      "nodeId": "nid689129801462f8e63e2cbe1797abaeaa",
+      "children": [
+        {
+          "parent": null,
+          "id": "ffnid47bf96cc0cd3ff08e739b3ab60674b2c",
+          "label": "C",
+          "value": "nid689129801462f8e63e2cbe1797abaeaa_|_nid47bf96cc0cd3ff08e739b3ab60674b2c",
+          "count": null,
+          "active": false,
+          "sortKey": 10,
+          "treeId": "nid689129801462f8e63e2cbe1797abaeaa",
+          "nodeId": "nid47bf96cc0cd3ff08e739b3ab60674b2c",
+          "children": [],
+          "type": null,
+          "name": "C"
+        }
+      ],
+      "type": "http://metadata.topicpilot.de/facets/type/extrinsic",
+      "name": "vw-partnumber-version-facet"
+    },
+    {
+      "parent": null,
+      "id": "ffnid4dd251bcb00ce8dd3baddd462fc25d67",
+      "label": "vw-topic-type-facet",
+      "value": "nid4dd251bcb00ce8dd3baddd462fc25d67_|_nid4dd251bcb00ce8dd3baddd462fc25d67",
+      "count": null,
+      "active": false,
+      "sortKey": 62,
+      "treeId": "nid4dd251bcb00ce8dd3baddd462fc25d67",
+      "nodeId": "nid4dd251bcb00ce8dd3baddd462fc25d67",
+      "children": [
+        {
+          "parent": null,
+          "id": "ffnid3df8aee26a2fc75e63e3fd137c9ebfc0",
+          "label": "topic",
+          "value": "nid4dd251bcb00ce8dd3baddd462fc25d67_|_nid3df8aee26a2fc75e63e3fd137c9ebfc0",
+          "count": null,
+          "active": false,
+          "sortKey": 10,
+          "treeId": "nid4dd251bcb00ce8dd3baddd462fc25d67",
+          "nodeId": "nid3df8aee26a2fc75e63e3fd137c9ebfc0",
+          "children": [],
+          "type": null,
+          "name": "topic"
+        }
+      ],
+      "type": "http://metadata.topicpilot.de/facets/type/extrinsic",
+      "name": "vw-topic-type-facet"
+    }
+  ]
+}

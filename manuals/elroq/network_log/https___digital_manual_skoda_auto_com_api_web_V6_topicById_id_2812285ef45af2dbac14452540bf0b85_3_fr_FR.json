@@ -1,0 +1,30 @@
+{
+  "queryLanguage": null,
+  "availableLanguages": [],
+  "allHitsCount": 1,
+  "withoutContext": false,
+  "collectionName": null,
+  "publicCollection": false,
+  "extendable": false,
+  "changedLanguage": false,
+  "user": null,
+  "results": [
+    {
+      "topicId": "2812285ef45af2dbac14452540bf0b85_3_fr_FR",
+      "previewImage": "imgb4b246d475188a2dac144525087a325c_2_--_--_PNG.png",
+      "title": "Notice d’utilisation",
+      "abstractText": "<span data-class=\"vw-modell-bez\">Škoda Elroq</span><br/><span data-class=\"vw-effective-from\">24.11.2025</span>",
+      "date": "2026-02-20T14:37:16.637Z",
+      "collections": [],
+      "topicType": "tree",
+      "docType": "Publication",
+      "printPDF": null,
+      "topicVariants": [],
+      "innerHitTopicVariants": [],
+      "topicTags": [],
+      "facets": [],
+      "webSearchPartnumberLabel": null
+    }
+  ],
+  "facetTrees": []
+}

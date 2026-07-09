@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuel Škoda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="manual-content.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-brand">
+        <a href="index.html#consulter" class="header-back" title="Accueil">← Accueil</a>
+        <h1 id="manual-title">Manuel Škoda</h1>
+        <button type="button" id="btn-export-pdf" class="header-btn" title="Créer et télécharger le manuel complet en PDF">
+          Exporter PDF
+        </button>
+      </div>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Rechercher dans le manuel…" autocomplete="off" spellcheck="false">
+        <div id="search-dropdown" class="search-dropdown hidden" role="listbox" aria-label="Résultats de recherche"></div>
+      </div>
+    </header>
+    <aside id="sidebar">
+      <nav id="tree"></nav>
+    </aside>
+    <main id="main">
+      <div id="breadcrumb"></div>
+      <div id="content">
+        <p id="placeholder">Sélectionnez un chapitre dans le sommaire.</p>
+      </div>
+      <div id="nav-buttons">
+        <button type="button" id="btn-prev">◀ Précédent</button>
+        <button type="button" id="btn-next">Suivant ▶</button>
+      </div>
+    </main>
+  </div>
+  <div id="pdf-modal" class="pdf-modal hidden" role="dialog" aria-modal="true" aria-labelledby="pdf-modal-title">
+    <div class="pdf-modal-box">
+      <h2 id="pdf-modal-title">Export PDF</h2>
+      <p id="pdf-modal-message">Préparation…</p>
+      <div class="pdf-progress-wrap hidden" id="pdf-progress-wrap">
+        <div class="pdf-progress-bar"><div id="pdf-progress-fill"></div></div>
+        <p id="pdf-progress-label"></p>
+      </div>
+      <div class="pdf-modal-actions">
+        <button type="button" id="pdf-modal-cancel" class="header-btn header-btn-muted">Annuler</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

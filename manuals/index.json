@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "saves": {
+    "elroq": {
+      "title": "Škoda Elroq",
+      "path": "manuals/elroq",
+      "vin": "TMBNH7NY1TF139075",
+      "modelType": "Elroq_PY",
+      "updatedAt": "2026-07-06T07:13:38.521517+00:00",
+      "topicCount": 710
+    },
+    "epiq": {
+      "title": "Škoda Epiq",
+      "path": "manuals/epiq",
+      "vin": "",
+      "modelType": "Epiq",
+      "updatedAt": "2026-07-06T17:42:39.542560+00:00",
+      "topicCount": 666
+    }
+  },
+  "lastOpened": "epiq"
+}

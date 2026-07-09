@@ -1,0 +1,15 @@
+{
+  "uIds": [
+    {
+      "id": "3VcuOPY9L4zJMzAvyUjCrz2G0j8aR5k1",
+      "type": 1,
+      "lifeTime": null
+    }
+  ],
+  "actions": [],
+  "handovers": [],
+  "sampling": {
+    "selected": true,
+    "ratioVersion": 0
+  }
+}

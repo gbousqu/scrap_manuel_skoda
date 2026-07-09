@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "isOlder": false,
+      "menuOrder": 4,
+      "modelType": "Elroq_PY",
+      "modelFamily": "PY",
+      "titleResourceKey": "Elroq_PY",
+      "imagePath": "https://ownersmanuals.blob.core.windows.net/ownersmanuals/PublishedImages/ModelImage-7b2ffe8e-776d-461c-bdf5-b57d149237e4.png",
+      "isNew": false,
+      "labelNewVariant": "Variant1",
+      "hasDigitalManuals": true,
+      "mbvCode": null
+    }
+  ],
+  "errorCode": "NoError",
+  "errorMessage": null
+}

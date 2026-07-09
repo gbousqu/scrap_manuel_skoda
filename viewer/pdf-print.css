@@ -1,0 +1,297 @@
+/* Export PDF — rendu proche du manuel Škoda (fond clair) */
+
+@page {
+  size: A4;
+  margin: 14mm 12mm 16mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Skoda Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 10pt;
+  line-height: 1.55;
+  color: #1a1a1a;
+  background: #fff;
+}
+
+.pdf-cover {
+  page-break-after: always;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.pdf-cover h1 {
+  margin: 0 0 0.5rem;
+  font-size: 26pt;
+  font-weight: 600;
+  color: #0e3a2f;
+}
+
+.pdf-cover p {
+  margin: 0.25rem 0;
+  color: #444;
+}
+
+.pdf-meta {
+  margin-top: 1.25rem !important;
+  font-size: 9pt;
+  color: #666 !important;
+}
+
+.pdf-meta a {
+  color: #0e3a2f;
+  text-decoration: underline;
+}
+
+/* === Sommaire cliquable === */
+
+.pdf-toc {
+  page-break-before: always;
+  page-break-after: always;
+}
+
+.pdf-toc h2 {
+  margin: 0 0 1rem;
+  font-size: 18pt;
+  color: #0e3a2f;
+}
+
+.pdf-toc-root,
+.pdf-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pdf-toc-item {
+  margin: 0.15rem 0;
+  font-size: 9.5pt;
+  line-height: 1.35;
+}
+
+.pdf-toc-folder {
+  margin: 0.35rem 0 0.15rem;
+  font-size: 9.5pt;
+  font-weight: 600;
+  color: #0e3a2f;
+}
+
+.pdf-toc-label {
+  display: block;
+  color: #0e3a2f;
+}
+
+.pdf-toc-folder > ul {
+  margin-top: 0.15rem;
+  font-weight: 400;
+}
+
+.pdf-toc-item.depth-0 { padding-left: 0; }
+.pdf-toc-item.depth-1 { padding-left: 0.75rem; }
+.pdf-toc-item.depth-2 { padding-left: 1.5rem; }
+.pdf-toc-item.depth-3 { padding-left: 2.25rem; }
+.pdf-toc-item.depth-4 { padding-left: 3rem; }
+
+.pdf-toc-folder.depth-0 { padding-left: 0; }
+.pdf-toc-folder.depth-1 { padding-left: 0.75rem; }
+.pdf-toc-folder.depth-2 { padding-left: 1.5rem; }
+.pdf-toc-folder.depth-3 { padding-left: 2.25rem; }
+
+.pdf-toc a {
+  color: #0e3a2f;
+  text-decoration: none;
+}
+
+.pdf-toc a:hover {
+  text-decoration: underline;
+}
+
+.pdf-chapter {
+  page-break-before: always;
+}
+
+.pdf-chapter-head {
+  margin: 0 0 1rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 2px solid #0e3a2f;
+}
+
+.pdf-breadcrumb {
+  margin: 0 0 0.35rem;
+  font-size: 8pt;
+  color: #5c6670;
+}
+
+.pdf-chapter-head h2 {
+  margin: 0;
+  font-size: 15pt;
+  font-weight: 600;
+  color: #0e3a2f;
+}
+
+/* === Contenu chapitre (équivalent #content du viewer, thème clair) === */
+
+.pdf-chapter-body {
+  font-size: 10pt;
+  line-height: 1.55;
+  color: #1a1a1a;
+}
+
+.pdf-chapter-body .topic-content,
+.pdf-chapter-body section {
+  margin: 0;
+}
+
+.pdf-chapter-body [data-role="block"] {
+  margin-bottom: 1rem;
+}
+
+.pdf-chapter-body p {
+  margin: 0 0 0.75rem;
+}
+
+.pdf-chapter-body p[data-type="titel"],
+.pdf-chapter-body p[data-role="bridgehead"] {
+  margin: 1.15rem 0 0.55rem;
+  font-size: 11pt;
+  font-weight: 600;
+  color: #0e3a2f;
+}
+
+.pdf-chapter-body ul,
+.pdf-chapter-body ol {
+  margin: 0 0 0.75rem;
+  padding-left: 1.25rem;
+}
+
+.pdf-chapter-body li {
+  margin-bottom: 0.35rem;
+}
+
+.pdf-chapter-body img.icon,
+.pdf-chapter-body img[data-role="icon"],
+.pdf-chapter-body img[data-role="safety-alert-symbol"] {
+  width: 19px !important;
+  height: 19px !important;
+  vertical-align: middle;
+}
+
+.pdf-chapter-body img.blockimage {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0.75rem 0 1rem;
+}
+
+.pdf-chapter-body img.symbol,
+.pdf-chapter-body img[data-role="symbol"] {
+  vertical-align: middle;
+  max-width: 2rem;
+  width: auto;
+  height: auto;
+}
+
+.pdf-chapter-body [data-role="warning"],
+.pdf-chapter-body [data-role="notice"],
+.pdf-chapter-body [data-role="danger"],
+.pdf-chapter-body [data-role="caution"] {
+  margin: 0.85rem 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  background: #f4f5f6;
+  border: 1px solid #d5d9dc;
+}
+
+.pdf-chapter-body [data-role="signalword-panel"] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pdf-chapter-body p[data-role="signalword"] {
+  margin: 0;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0e3a2f;
+}
+
+.pdf-chapter-body [data-type="illu"] {
+  margin: 0.65rem 0 0.85rem;
+}
+
+.pdf-chapter-body figure {
+  margin: 0;
+}
+
+.pdf-chapter-body figure img,
+.pdf-chapter-body .fancybox img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.pdf-chapter-body [data-class*="vw-layout-narrow"],
+.pdf-chapter-body div[data-class="vw-layout-narrow"] {
+  max-width: min(100%, 26rem);
+}
+
+.pdf-chapter-body [data-class*="vw-layout-half_column"],
+.pdf-chapter-body div[data-class="vw-layout-half_column"] {
+  max-width: min(100%, 50%);
+}
+
+.pdf-chapter-body a:link,
+.pdf-chapter-body a.local-topic-link,
+.pdf-chapter-body a.topiclink,
+.pdf-chapter-body a.vw-link-short,
+.pdf-chapter-body a.vw-link-long {
+  color: #0e3a2f;
+  text-decoration: underline;
+}
+
+.pdf-chapter-body a[href^="#ch-"] {
+  color: #0e3a2f;
+  text-decoration: underline;
+}
+
+.pdf-chapter-body span[data-class*="vw-dir-ltr"] {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+.pdf-chapter-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.65rem 0 0.85rem;
+  font-size: 9pt;
+}
+
+.pdf-chapter-body th,
+.pdf-chapter-body td {
+  border: 1px solid #d5d9dc;
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.pdf-chapter-body th {
+  background: #f4f5f6;
+  font-weight: 600;
+  color: #0e3a2f;
+}
+
+.pdf-chapter-body img {
+  max-width: 100%;
+  height: auto;
+}

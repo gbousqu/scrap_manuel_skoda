@@ -1,0 +1,22 @@
+# Profil navigateur scraper
+.scraper_browser_data/
+.scraper_browser_data_*/
+
+# État runtime scraping / PDF
+scraper_status.json
+scraper.lock
+scraper_run.log
+scraper_last_run.log
+pdf_build_target.txt
+scraper_task.json
+
+# Config locale machine
+pdf_python_path.txt
+pdf_env.bat
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
