@@ -8,14 +8,62 @@ Chaque modèle de véhicule est sauvegardé dans `manuals/{modèle}/` (ex. `manu
 
 ## Sommaire
 
-1. [But du projet](#but-du-projet)
-2. [Site scrapé](#site-scrapé)
-3. [Méthode de scraping](#méthode-de-scraping)
-4. [Créer / mettre à jour la version locale](#créer--mettre-à-jour-la-version-locale)
-5. [Consulter la version locale](#consulter-la-version-locale)
-6. [Structure des fichiers](#structure-des-fichiers)
-7. [Documentation technique](#documentation-technique)
-8. [Scripts utilitaires](#scripts-utilitaires)
+1. [Usage](#usage)
+2. [But du projet](#but-du-projet)
+3. [Site scrapé](#site-scrapé)
+4. [Méthode de scraping](#méthode-de-scraping)
+5. [Créer / mettre à jour la version locale](#créer--mettre-à-jour-la-version-locale)
+6. [Consulter la version locale](#consulter-la-version-locale)
+7. [Structure des fichiers](#structure-des-fichiers)
+8. [Documentation technique](#documentation-technique)
+9. [Scripts utilitaires](#scripts-utilitaires)
+
+---
+
+## Usage
+
+### Usages typiques
+
+- **Consulter hors ligne** le manuel (garage, voiture, zones sans réseau).
+- **Rechercher rapidement** (plein texte) dans tout le manuel.
+- **Exporter un PDF complet** (avec sommaire cliquable) pour archivage/partage.
+
+### Prérequis
+
+- **Python 3.10+**
+- **Playwright** + navigateur Chromium
+- **WAMP** (ou un serveur HTTP local) pour utiliser le viewer
+
+### Installation (une fois)
+
+```powershell
+pip install playwright
+playwright install chromium
+python setup_local_env.py
+```
+
+### Récupérer un manuel en local (scraping)
+
+1. Ouvrir `http://localhost/applis/scrap_manuel_skoda/viewer/`
+2. Onglet **Scraper un manuel** → **Ouvrir le navigateur de scraping**
+3. Sur le portail Škoda : **VIN ou modèle/année + langue**, puis ouvrir le manuel
+4. Dans la page du manuel (`…/show/…`) : cliquer **Lancer le scraping**
+
+Le manuel est sauvegardé dans `manuals/{slug}/`.
+
+### Parcourir en local
+
+- Ouvrir le viewer : `http://localhost/applis/scrap_manuel_skoda/viewer/`
+- Onglet **Consulter un manuel** → choisir le modèle
+
+### Exporter en PDF
+
+- Dans le lecteur : bouton **Exporter en PDF** (génère `manuals/{slug}/manual.pdf`)
+- Ou en ligne de commande :
+
+```powershell
+python build_manual_pdf.py --manual <slug>
+```
 
 ---
 
