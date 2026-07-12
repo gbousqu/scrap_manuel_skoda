@@ -1,11 +1,14 @@
 {
   "version": 1,
   "saves": {
-    "elroq": {
+    "elroq_2026_06_01": {
       "title": "Škoda Elroq",
-      "path": "manuals/elroq",
+      "path": "manuals/elroq_2026-06-01",
       "vin": "",
       "modelType": "Elroq",
+      "modelSlug": "elroq",
+      "releaseDate": "2026-06-01",
+      "releaseDateLabel": "01.06.2026",
       "updatedAt": "2026-07-12T21:50:36.755818+00:00",
       "topicCount": 727
     },
@@ -25,8 +28,8 @@
       "modelSlug": "elroq",
       "releaseDate": "2025-11-24",
       "releaseDateLabel": "24.11.2025",
-      "updatedAt": "2026-07-12T22:07:48.734495+00:00",
-      "topicCount": 0
+      "updatedAt": "2026-07-12T22:11:50.730869+00:00",
+      "topicCount": 709
     }
   },
   "lastOpened": "elroq_2025-11-24"
