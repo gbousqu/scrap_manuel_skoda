@@ -12,7 +12,7 @@ Déroulement :
     1. Le navigateur Chromium s'ouvre sur le portail Škoda.
     2. L'utilisateur saisit le VIN ou choisit un modèle (sans automatisation).
     3. Quand l'URL est …/show/…, le modal « Lancer le scraping » apparaît.
-    4. Téléchargement des chapitres dans manuals/{modèle}/.
+    4. Téléchargement des chapitres dans manuals/{modèle}_{date}/.
 
 Variables d'environnement optionnelles :
     SCRAPER_MANUAL=elroq  — forcer le dossier de sauvegarde
@@ -35,7 +35,11 @@ from manual_paths import (
     ManualPaths,
     PROJECT_ROOT,
     add_manual_arg,
+    build_manual_slug,
+    format_release_date_dmy,
     model_type_to_slug,
+    parse_effective_from,
+    parse_forced_model_slug,
     register_save,
     vehicle_title_from_model,
     viewer_url,
@@ -415,37 +419,44 @@ async def wait_for_manual_visible(page) -> None:
 async def detect_vehicle_from_manual_page(
     page, forced_slug: str | None = None
 ) -> dict:
-    """Déduit modèle / dossier de sauvegarde depuis le manuel ouvert."""
+    """Déduit modèle, date d'édition et dossier de sauvegarde depuis le manuel ouvert."""
     root_id = await get_root_topic_id(page)
     data = await fetch_topic(page, root_id)
     abstract = data.get("abstractText") or ""
     match = re.search(r"vw-modell-bez[^>]*>([^<]+)", abstract)
     title = html_module.unescape(match.group(1).strip()) if match else "Manuel Škoda"
+    release_date = parse_effective_from(abstract)
+    release_date_label = format_release_date_dmy(release_date)
     vin = (await get_stored_vin(page)) or os.environ.get("SCRAPER_VIN", "").strip().upper()
 
+    model_type: str
     if forced_slug:
-        slug = forced_slug.lower()
-        return {
-            "slug": slug,
-            "title": vehicle_title_from_model(f"{slug}_X"),
-            "modelType": forced_slug,
-            "vin": vin,
-        }
-
-    if vin and re.fullmatch(r"[A-Z0-9]{17}", vin):
+        model_slug = parse_forced_model_slug(forced_slug)
+        model_type = model_slug
+    elif vin and re.fullmatch(r"[A-Z0-9]{17}", vin):
         try:
             info = await fetch_vehicle_info(page, vin)
-            return {**info, "vin": vin, "title": info.get("title") or title}
+            model_type = info.get("modelType") or ""
+            model_slug = model_type_to_slug(model_type)
+            title = info.get("title") or title
         except RuntimeError:
-            pass
+            name = re.sub(r"^Škoda\s+", "", title, flags=re.I).strip()
+            model_slug = model_type_to_slug(f"{name}_PY")
+            model_type = name
+    else:
+        name = re.sub(r"^Škoda\s+", "", title, flags=re.I).strip()
+        model_slug = model_type_to_slug(f"{name}_PY")
+        model_type = name
 
-    name = re.sub(r"^Škoda\s+", "", title, flags=re.I).strip()
-    slug = model_type_to_slug(f"{name}_PY")
+    slug = build_manual_slug(model_slug, release_date)
     return {
         "slug": slug,
+        "modelSlug": model_slug,
         "title": title,
-        "modelType": name,
+        "modelType": model_type,
         "vin": vin,
+        "releaseDate": release_date,
+        "releaseDateLabel": release_date_label,
     }
 
 
@@ -772,10 +783,13 @@ async def main():
                 title=vehicle["title"],
                 vin=vehicle.get("vin") or "",
                 model_type=vehicle["modelType"],
+                release_date=vehicle.get("releaseDate"),
+                model_slug=vehicle.get("modelSlug"),
             )
             _paths.ensure_dirs()
             _network_log_dir = _paths.network_log
-            print(f"Sauvegarde : manuals/{slug}/ ({vehicle['title']})")
+            date_hint = vehicle.get("releaseDateLabel") or vehicle.get("releaseDate") or "?"
+            print(f"Sauvegarde : manuals/{slug}/ ({vehicle['title']}, édition {date_hint})")
 
             await show_scraping_modal_and_wait(page)
 
@@ -798,7 +812,14 @@ async def main():
                 json.dumps(scraped, indent=2, ensure_ascii=False), encoding="utf-8"
             )
 
-            manifest = build_manifest(tree, chapters, scraped, vehicle_title=vehicle["title"])
+            manifest = build_manifest(
+                tree,
+                chapters,
+                scraped,
+                vehicle_title=vehicle["title"],
+                release_date=vehicle.get("releaseDate"),
+                release_date_label=vehicle.get("releaseDateLabel"),
+            )
             write_manifest(paths().root, manifest)
             search_index = build_search_index(paths().root, manifest)
             write_search_index(paths().root, search_index)
@@ -808,6 +829,8 @@ async def main():
                 title=vehicle["title"],
                 vin=vehicle.get("vin") or "",
                 model_type=vehicle["modelType"],
+                release_date=vehicle.get("releaseDate"),
+                model_slug=vehicle.get("modelSlug"),
                 topic_count=len(scraped),
             )
 
@@ -815,6 +838,7 @@ async def main():
                 "done",
                 slug=slug,
                 title=vehicle["title"],
+                releaseDate=vehicle.get("releaseDate"),
                 topicCount=len(scraped),
                 message="Scraping terminé.",
                 viewerUrl=viewer_url(slug),

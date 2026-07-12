@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Vrstva_1" data-name="Vrstva 1" viewBox="0 0 548.19 566.93" width="386.77792" height="400.0">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m169.37,21.64H12.27v157.1h43.64v-113.46h113.46V21.64Zm209.46,43.64V21.64h157.1v157.1h-43.64v-113.46h-113.46Zm0,436.38h113.46v-113.46h43.64v157.1h-157.1v-43.64ZM55.91,388.19v113.46h113.46v43.64H12.27v-157.1h43.64Z"></path>
+</svg>

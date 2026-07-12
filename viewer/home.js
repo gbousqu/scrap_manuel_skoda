@@ -84,9 +84,10 @@ async function loadManualList() {
     .map(([slug, meta]) => {
       const title = meta.title || slug;
       const chapters = meta.topicCount ? `${meta.topicCount} chapitres` : "";
+      const edition = meta.releaseDateLabel ? `Édition ${meta.releaseDateLabel}` : "";
       const updated = formatDate(meta.updatedAt);
       const vin = meta.vin ? `VIN …${meta.vin.slice(-4)}` : "";
-      const metaLine = [chapters, updated, vin].filter(Boolean).join(" · ");
+      const metaLine = [chapters, edition, updated, vin].filter(Boolean).join(" · ");
       return `<li class="manual-card">
         <a href="read.html?manual=${encodeURIComponent(slug)}" class="manual-card-link">
           <span class="manual-card-title">${escapeHtml(title)}</span>

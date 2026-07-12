@@ -231,6 +231,7 @@ def load_print_css() -> str:
 
 def build_full_html(manifest: dict, topics: list[dict], topic_to_anchor: dict[str, str]) -> str:
     title = manifest.get("title") or "Manuel Škoda"
+    release_label = manifest.get("releaseDateLabel")
     css = load_print_css()
     sections: list[str] = []
 
@@ -267,10 +268,14 @@ def build_full_html(manifest: dict, topics: list[dict], topic_to_anchor: dict[st
             )
 
     toc = build_toc_html(manifest, topic_to_anchor)
+    edition_line = (
+        f'<p>Édition du {html.escape(release_label)}</p>' if release_label else ""
+    )
     cover = f"""
     <header class="pdf-cover" id="couverture">
       <h1>{html.escape(title)}</h1>
       <p>Manuel d'utilisation — version locale</p>
+      {edition_line}
       <p class="pdf-meta">{len(topics)} chapitres · <a href="#sommaire">Sommaire</a></p>
     </header>"""
 

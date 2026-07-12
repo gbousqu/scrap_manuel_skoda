@@ -58,7 +58,14 @@ class ManualPaths:
 
     @property
     def pdf(self) -> Path:
-        return self.root / "manual.pdf"
+        """PDF nommé manual_{slug}.pdf (ex. manual_elroq_2025-11-24.pdf)."""
+        dated = self.root / f"manual_{self.slug}.pdf"
+        legacy = self.root / "manual.pdf"
+        if dated.exists():
+            return dated
+        if legacy.exists():
+            return legacy
+        return dated
 
     @property
     def pdf_status(self) -> Path:
@@ -84,6 +91,54 @@ def model_type_to_slug(model_type: str) -> str:
     base = (model_type or "unknown").split("_")[0]
     slug = re.sub(r"[^a-z0-9]+", "", base.lower())
     return slug or "unknown"
+
+
+EFFECTIVE_FROM_RE = re.compile(r"vw-effective-from[^>]*>([^<]+)", re.I)
+DATE_DMY_RE = re.compile(r"(\d{1,2})\.(\d{1,2})\.(\d{4})")
+
+
+def parse_effective_from(abstract_text: str) -> str | None:
+    """Extrait la date d'édition (vw-effective-from) au format ISO YYYY-MM-DD."""
+    match = EFFECTIVE_FROM_RE.search(abstract_text or "")
+    if not match:
+        return None
+    raw = match.group(1).strip()
+    dm = DATE_DMY_RE.fullmatch(raw)
+    if dm:
+        day, month, year = dm.groups()
+        return f"{year}-{int(month):02d}-{int(day):02d}"
+    return re.sub(r"[^0-9-]", "-", raw).strip("-") or None
+
+
+def format_release_date_dmy(iso_date: str | None) -> str | None:
+    """2025-11-24 → 24.11.2025 (affichage Škoda)."""
+    if not iso_date:
+        return None
+    parts = iso_date.split("-")
+    if len(parts) != 3:
+        return iso_date
+    year, month, day = parts
+    return f"{int(day):02d}.{int(month):02d}.{year}"
+
+
+def build_manual_slug(model_slug: str, release_date: str | None = None) -> str:
+    """Identifiant unique : modèle + date d'édition (ex. elroq_2025-11-24)."""
+    model_slug = (model_slug or "unknown").strip().lower()
+    if release_date:
+        return f"{model_slug}_{release_date}"
+    return model_slug
+
+
+FULL_MANUAL_SLUG_RE = re.compile(r"^([a-z0-9]+)_(\d{4}-\d{2}-\d{2})$")
+
+
+def parse_forced_model_slug(forced_slug: str) -> str:
+    """Accepte elroq ou elroq_2025-11-24 → elroq."""
+    forced = (forced_slug or "").strip().lower()
+    match = FULL_MANUAL_SLUG_RE.match(forced)
+    if match:
+        return match.group(1)
+    return forced
 
 
 def vehicle_title_from_model(model_type: str) -> str:
@@ -159,7 +214,7 @@ def add_manual_arg(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--manual",
         metavar="SLUG",
-        help="Identifiant du manuel (ex. elroq, octavia). Défaut : SCRAPER_MANUAL ou lastOpened.",
+        help="Identifiant du manuel (ex. elroq, elroq_2025-11-24). Défaut : SCRAPER_MANUAL ou lastOpened.",
     )
 
 
@@ -171,10 +226,13 @@ def register_save(
     model_type: str,
     locale: str = "fr_FR",
     topic_count: int = 0,
+    release_date: str | None = None,
+    model_slug: str | None = None,
 ) -> ManualPaths:
     paths = get_manual_paths(slug)
     paths.ensure_dirs()
     now = datetime.now(timezone.utc).isoformat()
+    resolved_model_slug = model_slug or model_type_to_slug(model_type)
 
     meta = {
         "id": slug,
@@ -182,6 +240,10 @@ def register_save(
         "title": title,
         "vin": vin.upper(),
         "modelType": model_type,
+        "modelSlug": resolved_model_slug,
+        "releaseDate": release_date,
+        "releaseDateLabel": format_release_date_dmy(release_date),
+        "pdfFile": f"manual_{slug}.pdf",
         "locale": locale,
         "updatedAt": now,
         "topicCount": topic_count,
@@ -203,6 +265,9 @@ def register_save(
         "path": rel,
         "vin": vin.upper(),
         "modelType": model_type,
+        "modelSlug": resolved_model_slug,
+        "releaseDate": release_date,
+        "releaseDateLabel": format_release_date_dmy(release_date),
         "updatedAt": now,
         "topicCount": topic_count,
     }

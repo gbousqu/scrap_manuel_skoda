@@ -399,6 +399,8 @@ def build_manifest(
     flat_topics: list[dict],
     scraped_index: list[dict],
     vehicle_title: str = "Škoda Elroq",
+    release_date: str | None = None,
+    release_date_label: str | None = None,
 ) -> dict:
     file_by_topic = {
         item["topicId"]: Path(item["file"]).name
@@ -428,6 +430,8 @@ def build_manifest(
     return {
         "title": vehicle_title,
         "locale": "fr_FR",
+        "releaseDate": release_date,
+        "releaseDateLabel": release_date_label,
         "tree": tree,
         "flatTopics": flat_with_meta,
         "topicCount": len(flat_with_meta),

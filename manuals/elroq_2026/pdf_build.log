@@ -1,0 +1,80 @@
+Traceback (most recent call last):
+  File "C:\wamp64\www\applis\scrap_manuel_skoda\build_manual_pdf.py", line 20, in <module>
+    from playwright.async_api import async_playwright
+ModuleNotFoundError: No module named 'playwright'
+==== 05/07/2026 23:33:06,38 ====
+Aucun Python avec Playwright trouve.
+==== 05/07/2026 23:33:59,47 ====
+Utilisation de C:\Python313\python.exe
+PDF gÃ©nÃ©rÃ© : elroq_manual\manual_skoda_elroq.pdf (5.6 Mo, 710 chapitres)
+==== 2026-07-05 21:36:50 UTC ====
+PHP lance : C:\Python313\python.exe
+Traceback (most recent call last):
+  File "C:\wamp64\www\applis\scrap_manuel_skoda\build_manual_pdf.py", line 21, in <module>
+    from playwright.async_api import async_playwright
+ModuleNotFoundError: No module named 'playwright'
+==== 2026-07-05 21:37:32 UTC ====
+PHP lance : C:\Python313\python.exe
+Traceback (most recent call last):
+  File "C:\wamp64\www\applis\scrap_manuel_skoda\build_manual_pdf.py", line 21, in <module>
+    from playwright.async_api import async_playwright
+ModuleNotFoundError: No module named 'playwright'
+==== 05/07/2026 23:39:35,43 ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF gÃ©nÃ©rÃ© : elroq_manual\manual_skoda_elroq.pdf (5.6 Mo, 710 chapitres)
+==== 2026-07-05 21:40:54 UTC ====
+PHP lance : C:\wamp64\www\applis\scrap_manuel_skoda\run_pdf_build.bat
+==== 05/07/2026 23:40:54,32 ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF généré : elroq_manual\manual_skoda_elroq.pdf (5.6 Mo, 710 chapitres)
+==== 2026-07-05 21:45:45 UTC ====
+PHP lance : C:\wamp64\www\applis\scrap_manuel_skoda\run_pdf_build.bat
+==== 05/07/2026 23:45:45,95 ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF généré : elroq_manual\manual_skoda_elroq.pdf (40.2 Mo, 710 chapitres)
+==== 2026-07-05 21:51:17 UTC ====
+PHP lance : C:\wamp64\www\applis\scrap_manuel_skoda\run_pdf_build.bat
+==== 05/07/2026 23:51:17,14 ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF généré : elroq_manual\manual_skoda_elroq.pdf (35.8 Mo, 710 chapitres)
+==== 2026-07-05 22:01:56 UTC ====
+PHP lance : C:\wamp64\www\applis\scrap_manuel_skoda\run_pdf_build.bat
+==== 06/07/2026  0:01:56,20 ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF généré : elroq_manual\manual_skoda_elroq.pdf (35.9 Mo, 710 chapitres)
+==== 2026-07-06 16:55:47 UTC ====
+PHP lance : C:\wamp64\www\applis\scrap_manuel_skoda\run_pdf_build.bat elroq
+==== 06/07/2026 18:56:58,50 manual=elroq ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF gÃ©nÃ©rÃ© : C:\wamp64\www\applis\scrap_manuel_skoda\manuals\elroq\manual.pdf (35.9 Mo, 710 chapitres)
+==== 06/07/2026 19:01:11,51 manual=elroq ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF gÃ©nÃ©rÃ© : C:\wamp64\www\applis\scrap_manuel_skoda\manuals\elroq\manual.pdf (35.9 Mo, 710 chapitres)
+==== 2026-07-06 17:04:10 UTC ====
+PHP lance : C:\wamp64\www\applis\scrap_manuel_skoda\run_pdf_build.bat (manual=elroq)
+==== 06/07/2026 19:04:10,43 manual=elroq ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF généré : C:\wamp64\www\applis\scrap_manuel_skoda\manuals\elroq\manual.pdf (35.9 Mo, 710 chapitres)
+==== 2026-07-12 21:51:39 UTC ====
+PHP lance : C:\wamp64\www\applis\scrap_manuel_skoda\run_pdf_build.bat (manual=elroq)
+==== 12/07/2026 23:51:39,28 manual=elroq ====
+Utilisation de C:\Python313\python.exe
+USERPROFILE=C:\Users\gbousquet
+PYTHONPATH=C:\Users\gbousquet\AppData\Roaming\Python\Python313\site-packages
+PDF généré : C:\wamp64\www\applis\scrap_manuel_skoda\manuals\elroq\manual.pdf (41.0 Mo, 728 chapitres)

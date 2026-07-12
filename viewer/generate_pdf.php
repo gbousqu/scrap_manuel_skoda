@@ -16,12 +16,40 @@ if ($manualSlug === '') {
 
 $manualDir = $projectDir . DIRECTORY_SEPARATOR . 'manuals' . DIRECTORY_SEPARATOR . $manualSlug;
 $statusFile = $manualDir . DIRECTORY_SEPARATOR . 'pdf_build_status.json';
-$pdfFile = $manualDir . DIRECTORY_SEPARATOR . 'manual.pdf';
 $lockFile = $manualDir . DIRECTORY_SEPARATOR . 'pdf_build.lock';
 $logFile = $manualDir . DIRECTORY_SEPARATOR . 'pdf_build.log';
+$metaFile = $manualDir . DIRECTORY_SEPARATOR . 'meta.json';
 $envBat = $projectDir . DIRECTORY_SEPARATOR . 'pdf_env.bat';
 $script = $projectDir . DIRECTORY_SEPARATOR . 'build_manual_pdf.py';
 $runner = $projectDir . DIRECTORY_SEPARATOR . 'run_pdf_build.bat';
+
+function resolve_pdf_file(string $manualDir, string $manualSlug): string
+{
+    $metaFile = $manualDir . DIRECTORY_SEPARATOR . 'meta.json';
+    if (is_file($metaFile)) {
+        $meta = json_decode((string) file_get_contents($metaFile), true);
+        if (is_array($meta) && !empty($meta['pdfFile'])) {
+            $fromMeta = $manualDir . DIRECTORY_SEPARATOR . basename((string) $meta['pdfFile']);
+            if (is_file($fromMeta)) {
+                return $fromMeta;
+            }
+        }
+    }
+
+    $dated = $manualDir . DIRECTORY_SEPARATOR . 'manual_' . $manualSlug . '.pdf';
+    if (is_file($dated)) {
+        return $dated;
+    }
+
+    $legacy = $manualDir . DIRECTORY_SEPARATOR . 'manual.pdf';
+    if (is_file($legacy)) {
+        return $legacy;
+    }
+
+    return $dated;
+}
+
+$pdfFile = resolve_pdf_file($manualDir, $manualSlug);
 
 $action = $_GET['action'] ?? 'status';
 

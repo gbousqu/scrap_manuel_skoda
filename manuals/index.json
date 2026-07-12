@@ -4,10 +4,10 @@
     "elroq": {
       "title": "Škoda Elroq",
       "path": "manuals/elroq",
-      "vin": "TMBNH7NY1TF139075",
-      "modelType": "Elroq_PY",
-      "updatedAt": "2026-07-06T07:13:38.521517+00:00",
-      "topicCount": 710
+      "vin": "",
+      "modelType": "Elroq",
+      "updatedAt": "2026-07-12T21:50:36.755818+00:00",
+      "topicCount": 727
     },
     "epiq": {
       "title": "Škoda Epiq",
@@ -16,7 +16,18 @@
       "modelType": "Epiq",
       "updatedAt": "2026-07-06T17:42:39.542560+00:00",
       "topicCount": 666
+    },
+    "elroq_2025-11-24": {
+      "title": "Škoda Elroq",
+      "path": "manuals/elroq_2025-11-24",
+      "vin": "",
+      "modelType": "Elroq",
+      "modelSlug": "elroq",
+      "releaseDate": "2025-11-24",
+      "releaseDateLabel": "24.11.2025",
+      "updatedAt": "2026-07-12T22:07:48.734495+00:00",
+      "topicCount": 0
     }
   },
-  "lastOpened": "epiq"
+  "lastOpened": "elroq_2025-11-24"
 }
